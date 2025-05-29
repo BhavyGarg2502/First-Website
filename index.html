@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chess Links</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+    }
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+    .link-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 800px;
+    }
+    .link-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .link-card:hover {
+      transform: scale(1.05);
+    }
+    .link-card a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+    }
+    .news-section {
+      margin-top: 60px;
+      width: 90%;
+      max-width: 800px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Chess Resources</h1>
+  <div class="link-container">
+    <div class="link-card">
+      <a href="https://www.chess.com" target="_blank">Chess.com</a>
+    </div>
+    <div class="link-card">
+      <a href="https://lichess.org" target="_blank">Lichess</a>
+    </div>
+    <div class="link-card">
+      <a href="https://chess-results.com/fed.aspx?lan=1&fed=IND" target="_blank">Chess-Results</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.fide.com" target="_blank">FIDE</a>
+    </div>
+    <div class="link-card">
+      <a href="https://en.chessbase.com/" target="_blank">ChessBase</a>
+    </div>
+  </div>
+
+  <!-- https://rss.app/feeds/QPSJt69DV3OgTuT7.xml -->
+  <div class="news-section">
+    <h2>Latest Chess News</h2>
+    <iframe 
+      src="https://rss.app/embed/v1/wall/QPSJt69DV3OgTuT7" 
+      width="100%" 
+      height="400px" 
+      frameborder="0" 
+      style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </iframe>
+  </div>
+</body>
+</html>
